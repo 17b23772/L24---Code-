@@ -70,10 +70,19 @@ while Ticket_pass == 0:
   answer = input("Enter yes or no:  ")
   print ("\n")
   if answer == "yes":
+    print ("Thanks! This will be printed at the end.")
     Ticket_pass = 0 + 5
   elif answer == "no":
-    Ticket_pass = 0
-  elif ValueError:
+    print("Please remember to place your ticket in your car window! ")
+    Ticket_pass = 1
+  else:
     print ("You must enter  yes  or  no")
 
+#Creating the total cost. 
+print("\n")
 
+Total_cost = 0 
+while Total_cost == 0 : 
+  Total_cost = adult_tickets * 20 + child_tickets * 12 + Senior_tickets * 11 + Wristband_tickets * 20 
+  print ("Your total cost is:") 
+  print (Total_cost)
